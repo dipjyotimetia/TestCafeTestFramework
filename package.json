@@ -1,0 +1,38 @@
+{
+  "name": "testcafe-todomvc",
+  "version": "1.0.0",
+  "description": "testcafe todomvc example",
+  "scripts": {
+    "test:ci": "./node_modules/.bin/testcafe chrome:headless tests/ --concurrency 7",
+    "test:speed": "./node_modules/.bin/testcafe chrome tests/ --speed 0.5",
+    "test:emulate": "./node_modules/.bin/testcafe 'chrome:emulation:width=800;height=600;' tests/",
+    "test:parallel": "./node_modules/.bin/testcafe chrome tests/ --concurrency 7",
+    "test:headless": "./node_modules/.bin/testcafe chrome:headless tests/",
+    "test:debug": "./node_modules/.bin/testcafe chrome tests/ --debug-on-fail",
+    "test:screenshots": "./node_modules/.bin/testcafe chrome tests/ --screenshots-on-fails -s screenshots",
+    "test": "testcafe chrome tests/ --hostname localhost",
+    "test:cross": "testcafe chrome,firefox,ie,edge tests/ --hostname localhost",
+    "test:ie": "./node_modules/.bin/testcafe ie tests/ --hostname localhost",
+    "test:edge": "./node_modules/.bin/testcafe edge tests/ --hostname localhost",
+    "test:firefox": "./node_modules/.bin/testcafe firefox tests/ --hostname localhost"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fvitas/testcafe-todomvc.git"
+  },
+  "keywords": [
+    "E2E tests",
+    "UI test",
+    "testcafe",
+    "todo"
+  ],
+  "author": "Filip Vitas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fvitas/testcafe-todomvc/issues"
+  },
+  "homepage": "https://github.com/fvitas/testcafe-todomvc#readme",
+  "dependencies": {
+    "testcafe": "^1.1.0"
+  }
+}
