@@ -23,11 +23,6 @@
     "todo"
   ],
   "author": "Dipjyoti Metia",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fvitas/testcafe-todomvc/issues"
-  },
-  "homepage": "https://github.com/fvitas/testcafe-todomvc#readme",
   "dependencies": {
     "testcafe": "^1.1.3"
   }
