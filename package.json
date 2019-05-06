@@ -16,23 +16,19 @@
     "test:edge": "./node_modules/.bin/testcafe edge tests/ --hostname localhost",
     "test:firefox": "./node_modules/.bin/testcafe firefox tests/ --hostname localhost"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fvitas/testcafe-todomvc.git"
-  },
   "keywords": [
     "E2E tests",
     "UI test",
     "testcafe",
     "todo"
   ],
-  "author": "Filip Vitas",
+  "author": "Dipjyoti Metia",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fvitas/testcafe-todomvc/issues"
   },
   "homepage": "https://github.com/fvitas/testcafe-todomvc#readme",
   "dependencies": {
-    "testcafe": "^1.1.0"
+    "testcafe": "^1.1.3"
   }
 }
