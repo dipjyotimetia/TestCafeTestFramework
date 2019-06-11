@@ -24,6 +24,6 @@
   ],
   "author": "Dipjyoti Metia",
   "dependencies": {
-    "testcafe": "^1.1.4"
+    "testcafe": "^1.2.1"
   }
 }
