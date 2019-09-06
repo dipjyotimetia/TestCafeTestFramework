@@ -14,7 +14,8 @@
     "test:cross": "testcafe chrome,firefox,ie,edge tests/ --hostname localhost",
     "test:ie": "./node_modules/.bin/testcafe ie tests/ --hostname localhost",
     "test:edge": "./node_modules/.bin/testcafe edge tests/ --hostname localhost",
-    "test:firefox": "./node_modules/.bin/testcafe firefox tests/ --hostname localhost"
+    "test:firefox": "./node_modules/.bin/testcafe firefox tests/ --hostname localhost",
+    "test:chrome": "./node_modules/.bin/testcafe chrome tests/ --hostname localhost"
   },
   "keywords": [
     "E2E tests",
@@ -24,6 +25,6 @@
   ],
   "author": "Dipjyoti Metia",
   "dependencies": {
-    "testcafe": "^1.4.0"
+    "testcafe": "^1.4.3"
   }
 }
