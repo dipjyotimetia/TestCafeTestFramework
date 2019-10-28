@@ -1,4 +1,4 @@
-import { Selector } from 'testcafe'
+import { Selector ,t} from 'testcafe'
 
 class TodoPage {
     constructor() {
