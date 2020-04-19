@@ -4,13 +4,18 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    container:
-      image: testcafe/testcafe
-
+    name: Run Tests Operating Systems
+    runs-on: $
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node: 12
     steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: $
       - uses: actions/checkout@v1
-      - name: npm install and build
-        run: |
-          npm install
-          npm run test:ci
+      - name: Run TestCafe Tests
+        uses: DevExpress/testcafe-action@latest
+        with:
+          args: "chrome tests"
