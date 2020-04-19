@@ -5,15 +5,14 @@ on: [push]
 jobs:
   build:
     name: Run Tests Operating Systems
-    runs-on: $
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
         node: [12.x]
     steps:
       - uses: actions/setup-node@v1
         with:
-          node-version: $
+          node-version: ${{ matrix.node-version }}
       - uses: actions/checkout@v1
       - name: Run TestCafe Tests
         uses: DevExpress/testcafe-action@latest
