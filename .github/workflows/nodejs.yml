@@ -6,9 +6,12 @@ jobs:
   build:
     name: Run Tests Operating Systems
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [12.x]
+    container:
+      image: testcafe/testcafe
+    # strategy:
+    #   matrix:
+    #     node: [12.x]
+
     steps:
       - uses: actions/setup-node@v1
         with:
