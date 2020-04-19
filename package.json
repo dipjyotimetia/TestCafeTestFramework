@@ -14,7 +14,7 @@
     "test:cross": "testcafe chrome,firefox,ie,edge tests/ --hostname localhost",
     "test:ie": "./node_modules/.bin/testcafe ie tests/ --hostname localhost",
     "test:edge": "./node_modules/.bin/testcafe edge tests/ --hostname localhost",
-    "test:firefox": "./node_modules/.bin/testcafe firefox tests/ --video video --reporter html",
+    "test:firefox": "./node_modules/.bin/testcafe firefox tests/ --video video --reporter html:reports/reports.html",
     "test:chrome": "./node_modules/.bin/testcafe chrome tests/ --video video"
   },
   "keywords": [
