@@ -9,11 +9,6 @@
         "path": "screenshot",
         "pathPattern": "${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.png"
     },
-    "videoOptions": {
-        "singleFile": true,
-        "failedOnly": true,
-        "pathPattern": "${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.mp4"
-    },
     "debugMode": true,
     "debugOnFail": false,
     "skipJsErrors": true,
