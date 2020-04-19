@@ -29,7 +29,7 @@
     "testcafe-react-selectors": "4.0.0",
     "chalk": "3.0.0",
     "jsome": "2.5.0",
-    "minimist": "1.2.0",
+    "minimist": "1.2.3",
     "rimraf": "3.0.1",
     "slash": "3.0.0",
     "ts-node": "8.5.4",
