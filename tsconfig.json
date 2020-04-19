@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "jsxFactory": "myFactory",
+        "alwaysStrict": true,
+        "allowJs": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "inlineSourceMap": true,
+        "noImplicitAny": false,
+        "pretty": true,
+        "skipLibCheck": true
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "reporter": {
+        "name": "xunit",
+        "output": "reports/report.xml"
+    },
+    "screenshots": {
+        "takeOnFails": true,
+        "fullPage": true,
+        "path": "screenshot",
+        "pathPattern": "${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.png"
+    },
+    "videoOptions": {
+        "singleFile": true,
+        "failedOnly": true,
+        "pathPattern": "${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.mp4"
+    },
+    "debugMode": true,
+    "debugOnFail": false,
+    "skipJsErrors": true,
+    "skipUncaughtErrors": true,
+    "appInitDelay": 3000,
+    "concurrency": 1,
+    "selectorTimeout": 3000,
+    "assertionTimeout": 1000,
+    "pageLoadTimeout": 1000,
+    "hostname": "localhost",
+    "developmentMode": false,
+    "tsConfigPath": "tsconfig.json",
+    "disablePageCaching": true,
+    "color": true
+}
