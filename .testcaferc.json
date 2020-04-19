@@ -9,7 +9,7 @@
         "path": "screenshot",
         "pathPattern": "${DATE}_${TIME}/test-${TEST_INDEX}/${USERAGENT}/${FILE_INDEX}.png"
     },
-    "debugMode": true,
+    "debugMode": false,
     "debugOnFail": false,
     "skipJsErrors": true,
     "skipUncaughtErrors": true,
