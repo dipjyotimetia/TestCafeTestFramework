@@ -27,32 +27,29 @@
   "dependencies": {
     "testcafe": "^1.8.4",
     "testcafe-react-selectors": "4.0.0",
-    "@types/chalk": "2.2.0",
-    "@types/minimist": "1.2.0",
-    "@types/node": "13.7.0",
     "chalk": "3.0.0",
     "jsome": "2.5.0",
     "minimist": "1.2.0",
     "rimraf": "3.0.1",
     "slash": "3.0.0",
-    "testcafe-reporter-cucumber-json": "4.0.0",
-    "testcafe-reporter-teamcity": "1.0.10",
     "ts-node": "8.5.4",
     "testcafe-reporter-html": "1.4.6"
   },
   "devDependencies": {
+    "@types/chalk": "2.2.0",
+    "@types/minimist": "1.2.0",
+    "@types/node": "13.7.0",
     "@ffmpeg-installer/ffmpeg": "1.0.20",
     "@typescript-eslint/eslint-plugin": "2.28.0",
     "@typescript-eslint/parser": "2.28.0",
+    "@testing-library/testcafe": "4.0.0",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.1",
     "eslint-plugin-import": "2.20.2",
     "eslint-plugin-prettier": "3.1.3",
     "eslint-plugin-testcafe": "0.2.1",
     "mem": "6.1.0",
-    "multiple-cucumber-html-reporter": "1.16.1",
     "prettier": "2.0.4",
-    "typescript": "3.8.3",
-    "@testing-library/testcafe": "4.0.0"
+    "typescript": "3.8.3"
   }
 }
