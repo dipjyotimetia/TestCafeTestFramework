@@ -6,7 +6,7 @@ fixture('Test TodoMVC App')
     .page('http://todomvc.com/examples/vanillajs/')
 
 
-test('Create todo', async t => {
+test.skip('Create todo', async t => {
     await t
         .maximizeWindow()
         .typeText(selector.input, 'write blog post about JS')
@@ -24,7 +24,7 @@ test('Create todo', async t => {
 })
 
 
-test('Edit todo', async t => {
+test.skip('Edit todo', async t => {
     await t
         .typeText(selector.input, 'write blog post about JS')
         .pressKey('enter')
@@ -42,7 +42,7 @@ test('Edit todo', async t => {
 })
 
 
-test('Delete todo', async t => {
+test.skip('Delete todo', async t => {
     await t
         .typeText(selector.input, 'write blog post about JS')
         .pressKey('enter')
@@ -89,7 +89,7 @@ test('Complete one todo', async t => {
 })
 
 
-test('Show active/completed todos', async t => {
+test.skip('Show active/completed todos', async t => {
     await t
         .typeText(selector.input, 'write blog post about JS')
         .pressKey('enter')
