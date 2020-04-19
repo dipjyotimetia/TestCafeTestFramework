@@ -1,8 +1,4 @@
 {
-    "reporter": {
-        "name": "xunit",
-        "output": "reports/report.xml"
-    },
     "screenshots": {
         "takeOnFails": true,
         "fullPage": true,
