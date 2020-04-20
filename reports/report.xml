@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite name="TestCafe Tests: Chrome 81.0.4044.113 / Windows 10" tests="3" failures="0" skipped="4" errors="0" time="9.708" timestamp="Mon, 20 Apr 2020 13:57:07 GMT" >
+  <testcase classname="Test TodoMVC App" name="Create todo" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="Test TodoMVC App" name="Edit todo" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Test TodoMVC App" name="Delete todo" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Test TodoMVC App" name="Complete one todo" time="3.13">
+  </testcase>
+  <testcase classname="Test TodoMVC App" name="Show active/completed todos" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="Test TodoMVC App" name="Complete all todos" time="3.158">
+  </testcase>
+  <testcase classname="Test TodoMVC App" name="Delete all completed todos" time="3.355">
+  </testcase>
+</testsuite>
