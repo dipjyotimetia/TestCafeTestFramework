@@ -6,6 +6,8 @@ jobs:
   build:
     name: Run Tests Operating Systems
     runs-on: ubuntu-latest
+    container:
+      image: dipjyotimetia/testcafetest
     strategy:
       matrix:
         node: [12.x]
