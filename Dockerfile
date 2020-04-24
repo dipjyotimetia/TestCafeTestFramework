@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:bionic-20200311
 
 # Install nodejs lts
 ENV NODE_VERSION=12.16.2
