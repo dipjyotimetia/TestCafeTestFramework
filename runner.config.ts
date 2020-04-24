@@ -6,7 +6,7 @@ const setupTestCafe = async () => {
         const runner = testCafe.createRunner();
         await runner
             .src('tests/*.test.ts')
-            .browsers(['chrome:headless --no-sandbox --disable-gpu','firefox:headless'])
+            .browsers('chrome:headless --no-sandbox --disable-gpu')
             .reporter(['spec',{
                 name: 'xunit',
                 output: 'reports/report.xml'
