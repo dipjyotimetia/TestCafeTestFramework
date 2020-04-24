@@ -1,5 +1,6 @@
 FROM ubuntu:latest
 
+# Install nodejs lts
 ENV NODE_VERSION=12.16.2
 RUN apt-get update && \
     apt-get install wget curl ca-certificates rsync -y
@@ -30,24 +31,4 @@ RUN FIREFOX_DOWNLOAD_URL=$(if [ $FIREFOX_VERSION = "latest" ] || [ $FIREFOX_VERS
   && mv /opt/firefox /opt/firefox-$FIREFOX_VERSION \
   && ln -fs /opt/firefox-$FIREFOX_VERSION/firefox /usr/bin/firefox
 
-# ENTRYPOINT ["chromium-browser", "--headless", "--disable-gpu", "--disable-software-rasterizer", "--disable-dev-shm-usage"]
-
-# dependencies will be installed only if the package files change
-COPY package.json .
-COPY package-lock.json .
-COPY tsconfig.json .
-COPY runner.config.ts .
-
-ENV CI=1
-RUN npm ci
-
-COPY config config
-COPY data data
-COPY pageobjects pageobjects
-COPY reports reports
-COPY screenshot screenshot
-COPY selectors selectors
-COPY tests tests
-COPY video video
-
-RUN npm test
+ENTRYPOINT ["chromium-browser", "--headless", "--disable-gpu", "--disable-software-rasterizer", "--disable-dev-shm-usage"]
