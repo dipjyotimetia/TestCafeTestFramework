@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build:
-    name: Run Tests Operating Systems
+    name: Execute Tests
     runs-on: ubuntu-latest
     container:
       image: dipjyotimetia/testcafetest
