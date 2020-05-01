@@ -17,11 +17,12 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - uses: actions/checkout@v1
       - run: npm ci
+      - name: Execute Tests
       - run: npm test
         env:
           CI: true
-      - name: Test results
+      - name: Upload Test results
         uses: actions/upload-artifact@v2
         with:
           name: Test-report
-          path: reports/reports.html    
+          path: reports/reports.html
