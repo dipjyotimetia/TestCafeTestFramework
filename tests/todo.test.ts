@@ -1,5 +1,6 @@
 import { Selector } from "testcafe";
-import * as selector from "../selectors/index";
+import * as selector from "../src/selectors/index";
+import * as pages from "../src/pageObjects/index";
 
 
 fixture('Test TodoMVC App')
@@ -68,24 +69,8 @@ test.skip('Delete todo', async t => {
 })
 
 
-test('Complete one todo', async t => {
-    await t
-        .typeText(selector.input, 'write blog post about JS')
-        .pressKey('enter')
-
-        .typeText(selector.input, 'buy some beer')
-        .pressKey('enter')
-
-    await t
-        .click(selector.todoItems.nth(0).find('.toggle'))
-
-    await t
-        .expect(selector.todoItems.nth(0).hasClass('completed'))
-        .ok()
-
-    await t
-        .expect(selector.todoItems.count)
-        .eql(2)
+test('Complete one todo', async () => {
+    await pages.completeOneTodo();
 })
 
 
@@ -122,53 +107,11 @@ test.skip('Show active/completed todos', async t => {
 })
 
 
-test('Complete all todos', async t => {
-    await t
-        .typeText(selector.input, 'write blog post about JS')
-        .pressKey('enter')
-
-        .typeText(selector.input, 'buy some beer')
-        .pressKey('enter')
-
-        .typeText(selector.input, 'watch a movie')
-        .pressKey('enter')
-
-        .typeText(selector.input, 'go to a meeting')
-        .pressKey('enter')
-
-    await t
-        .expect(selector.todoItems.count)
-        .eql(4)
-        .expect(selector.completedTodos.count)
-        .eql(0)
-
-    await t
-        .click(selector.completeAll)
-
-    await t
-        .expect(selector.completedTodos.count)
-        .eql(4)
+test('Complete all todos', async () => {
+    await pages.completeAllTodo();
 })
 
 
-test('Delete all completed todos', async t => {
-
-    let todos = ['write blog post about JS', 'buy some beer', 'watch a movie', 'go to a meeting']
-
-    for (let todo of todos)
-        await t
-            .typeText(selector.input, todo)
-            .pressKey('enter')
-
-    await t
-        .expect(selector.todoItems.count)
-        .eql(todos.length)
-
-    await t
-        .click(selector.completeAll)
-        .click(selector.deleteCompleted)
-
-    await t
-        .expect(selector.todoItems.count)
-        .eql(0)
+test('Delete all completed todos', async () => {
+    await pages.deleteAllCompletedTodo();
 })

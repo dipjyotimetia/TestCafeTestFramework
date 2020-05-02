@@ -80,3 +80,53 @@ export const completeOneTodo = async () => {
         .expect(selector.todoItems.count)
         .eql(2)
 };
+
+
+export const completeAllTodo = async () => {
+    await t
+        .typeText(selector.input, 'write blog post about JS')
+        .pressKey('enter')
+
+        .typeText(selector.input, 'buy some beer')
+        .pressKey('enter')
+
+        .typeText(selector.input, 'watch a movie')
+        .pressKey('enter')
+
+        .typeText(selector.input, 'go to a meeting')
+        .pressKey('enter')
+
+    await t
+        .expect(selector.todoItems.count)
+        .eql(4)
+        .expect(selector.completedTodos.count)
+        .eql(0)
+
+    await t
+        .click(selector.completeAll)
+
+    await t
+        .expect(selector.completedTodos.count)
+        .eql(4)
+}
+
+export const deleteAllCompletedTodo = async () => {
+    let todos = ['write blog post about JS', 'buy some beer', 'watch a movie', 'go to a meeting']
+
+    for (let todo of todos)
+        await t
+            .typeText(selector.input, todo)
+            .pressKey('enter')
+
+    await t
+        .expect(selector.todoItems.count)
+        .eql(todos.length)
+
+    await t
+        .click(selector.completeAll)
+        .click(selector.deleteCompleted)
+
+    await t
+        .expect(selector.todoItems.count)
+        .eql(0)
+}

@@ -29,7 +29,7 @@ const setupTestCafe = async () => {
                 stopOnFirstFail: true,
                 tsConfigPath: "tsconfig.json",
             });
-        console.log('Test finished');    
+        console.log('Test finished');
         testCafe.close();
     } catch (error) {
         console.log(error);
