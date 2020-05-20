@@ -1,4 +1,4 @@
-# Contributing to HybridTestFramework
+# Contributing to TestCafeTestFramework
 
 This framework welcomes contributions from everyone. There are a
 number of ways you can help:
