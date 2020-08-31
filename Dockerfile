@@ -1,7 +1,7 @@
 FROM ubuntu:bionic-20200311
 
 # Install nodejs lts
-ENV NODE_VERSION=12.16.2
+ENV NODE_VERSION=12.18.3
 RUN apt-get update && \
     apt-get install wget curl ca-certificates rsync -y
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
