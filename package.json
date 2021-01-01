@@ -33,7 +33,7 @@
     "minimist": "1.2.5",
     "rimraf": "3.0.2",
     "slash": "3.0.0",
-    "ts-node": "9.0.0",
+    "ts-node": "9.1.1",
     "testcafe-reporter-html": "1.4.6"
   },
   "devDependencies": {
