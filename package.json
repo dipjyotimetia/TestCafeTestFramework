@@ -26,7 +26,7 @@
   ],
   "author": "Dipjyoti Metia <dipjyotimetia@gmail.com>",
   "dependencies": {
-    "testcafe": "^1.9.4",
+    "testcafe": "^1.10.1",
     "testcafe-react-selectors": "4.1.4",
     "chalk": "4.1.0",
     "jsome": "2.5.0",
