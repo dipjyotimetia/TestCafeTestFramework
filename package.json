@@ -37,7 +37,7 @@
     "ts-node": "^10.0.0"
   },
   "devDependencies": {
-    "@ffmpeg-installer/ffmpeg": "^1.0.20",
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@testing-library/testcafe": "^4.4.0",
     "@types/chalk": "^2.2.0",
     "@types/minimist": "^1.2.1",
