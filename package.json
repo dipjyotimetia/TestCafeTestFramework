@@ -28,7 +28,7 @@
   "dependencies": {
     "chalk": "^5.0.1",
     "jsome": "^2.5.0",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "rimraf": "^3.0.2",
     "slash": "^4.0.0",
     "testcafe": "^15.1.317922",
