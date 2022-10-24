@@ -41,7 +41,7 @@
     "@testing-library/testcafe": "^4.4.1",
     "@types/chalk": "^2.2.0",
     "@types/minimist": "^1.2.2",
-    "@types/node": "^18.8.3",
+    "@types/node": "^18.11.4",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.30.7",
     "eslint": "^8.25.0",
