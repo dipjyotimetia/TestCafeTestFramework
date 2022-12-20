@@ -5,18 +5,18 @@ on: [push]
 jobs:
   build:
     name: Execute Tests
-    runs-on: ubuntu-latest
-    container:
-      image: dipjyotimetia/testcafetest
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node: [18.x]
+        os: [ubuntu-latest, windows-latest]
+        node: [18, 19]
     steps:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
       - uses: actions/checkout@v3
       - run: npm ci
+      - run: npm i -g testcafe
       - run: npm test
         env:
           CI: true
