@@ -5,15 +5,20 @@ const setupTestCafe = async () => {
     try {
         const runner = testCafe.createRunner();
         await runner
+            .compilerOptions({
+                typescript: {
+                    configPath: 'tsconfig.json'
+                }
+            })
             .src('tests/*.test.ts')
             .browsers('chrome:headless --no-sandbox --disable-gpu')
-            .reporter(['spec',{
+            .reporter(['spec', {
                 name: 'xunit',
                 output: 'reports/report.xml'
             }, {
-                name: 'html',
-                output: 'reports/reports.html'
-            }])
+                    name: 'html',
+                    output: 'reports/reports.html'
+                }])
             .screenshots({
                 takeOnFails: true,
                 fullPage: true,
@@ -27,7 +32,6 @@ const setupTestCafe = async () => {
                 assertionTimeout: 7000,
                 pageLoadTimeout: 8000,
                 stopOnFirstFail: true,
-                tsConfigPath: "tsconfig.json",
             });
         console.log('Test finished');
         testCafe.close();

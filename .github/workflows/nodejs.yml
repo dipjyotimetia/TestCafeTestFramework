@@ -10,7 +10,7 @@ jobs:
       image: dipjyotimetia/testcafetest
     strategy:
       matrix:
-        node: [12.x]
+        node: [18.x]
     steps:
       - uses: actions/setup-node@v3
         with:
