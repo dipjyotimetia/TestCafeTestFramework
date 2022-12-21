@@ -27,7 +27,7 @@
   "author": "Dipjyoti Metia <dipjyotimetia@gmail.com>",
   "dependencies": {
     "chalk": "^5.2.0",
-    "jsome": "^2.3.26",
+    "jsome": "^2.5.0",
     "minimist": "^1.2.7",
     "rimraf": "^3.0.2",
     "slash": "^5.0.0",
