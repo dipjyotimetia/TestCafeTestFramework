@@ -27,31 +27,29 @@
   "author": "Dipjyoti Metia <dipjyotimetia@gmail.com>",
   "dependencies": {
     "chalk": "^5.2.0",
-    "jsome": "^2.5.0",
+    "jsome": "^2.3.26",
     "minimist": "^1.2.8",
     "rimraf": "^4.4.0",
     "slash": "^5.0.0",
-    "testcafe": "^15.1.317922",
+    "testcafe": "^2.4.0",
     "testcafe-react-selectors": "^5.0.2",
-    "testcafe-reporter-html": "^1.4.6",
-    "ts-node": "^10.9.1"
+    "testcafe-reporter-html": "^1.4.6"
   },
   "devDependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@testing-library/testcafe": "^5.0.0",
     "@types/chalk": "^2.2.0",
     "@types/minimist": "^1.2.2",
-    "@types/node": "^18.11.19",
-    "@typescript-eslint/eslint-plugin": "^5.50.0",
-    "@typescript-eslint/parser": "^5.50.0",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
     "eslint": "^8.36.0",
-    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-testcafe": "^0.2.1",
     "mem": "^9.0.2",
     "openssl-self-signed-certificate": "^1.1.6",
-    "prettier": "^2.8.4",
+    "prettier": "^2.8.7",
     "typescript": "^5.0.2"
   }
 }
