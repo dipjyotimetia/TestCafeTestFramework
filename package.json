@@ -29,7 +29,7 @@
     "chalk": "^5.2.0",
     "jsome": "^2.3.26",
     "minimist": "^1.2.8",
-    "rimraf": "^5.0.0",
+    "rimraf": "^5.0.1",
     "slash": "^5.1.0",
     "testcafe": "^15.1.317922",
     "testcafe-react-selectors": "^5.0.2",
