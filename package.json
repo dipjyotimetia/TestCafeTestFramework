@@ -49,7 +49,7 @@
     "eslint-plugin-testcafe": "^0.2.1",
     "mem": "^9.0.2",
     "openssl-self-signed-certificate": "^1.1.6",
-    "prettier": "^3.0.0",
+    "prettier": "^3.0.1",
     "typescript": "^5.1.6"
   }
 }
