@@ -39,7 +39,7 @@
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@testing-library/testcafe": "^5.0.1",
     "@types/chalk": "^2.2.0",
-    "@types/minimist": "^1.2.4",
+    "@types/minimist": "^1.2.5",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.19.0",
     "eslint": "^8.52.0",
