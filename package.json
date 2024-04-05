@@ -50,6 +50,6 @@
     "mem": "^10.0.0",
     "openssl-self-signed-certificate": "^1.1.6",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.4"
   }
 }
